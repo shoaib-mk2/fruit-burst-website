@@ -22,55 +22,103 @@
 <body class=".font-lato">
     <header>
         <!-- navbar section start -->
-        <nav class="navbar rounded-full md:bg-[#F85559] max-w-screen-2xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24">
-            <div class="navbar-start">
-                <div class="hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-white text-lg">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
+        <div class="max-w-screen-2xl mx-auto py-5 px-8 md:px-16 lg:px-24">
+            <nav class="navbar rounded-full md:bg-[#F85559] mx-auto py-5 md:px-16 lg:px-24">
+                <div class="navbar-start">
+                    <div class="hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-white text-lg">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center md:gap-4 lg:hidden">
+                        <div><img class="w-3/4 md:w-full" src="images/logo.png" alt=""></div>
+                        <div>
+                            <h1 class="text-2xl text-black md:font-bold md:text-4xl">Fruit Burst</h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex items-center md:gap-4 lg:hidden">
-                    <div><img class="w-3/4 md:w-full" src="images/logo.png" alt=""></div>
+                <div class="navbar-center hidden lg:flex gap-4">
+                    <div><img src="images/logo.png" alt=""></div>
                     <div>
-                        <h1 class="text-2xl text-black md:font-bold md:text-4xl">Fruit Burst</h1>
+                        <h1 class="text-4xl font-bold text-white">Fruit Burst</h1>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <input type="text" placeholder="Search here"
+                        class="input input-bordered w-full max-w-xs rounded-full hidden lg:flex" />
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-max">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <input type="text" placeholder="Search here"
+                                class="input input-bordered w-full max-w-xs rounded-full" />
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar section end -->
+        <!-- carousel section start -->
+        <section class="max-w-screen-2xl mx-auto py-5 px-8 md:px-16 lg:px-24">
+            <div class="carousel w-full text-center">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-center items-center w-full h-full">
+                        <div>
+                            <h1 class="font-bold text-white text-xl md:text-5xl lg:text-7xl lg:mb-6">Exotic tastes at your<br>doorstep</h1>
+                            <p class="font-medium text-white text-sm mt-1 mb-1 md:mt-3 md:mb-3 md:text-base lg:text-xl lg:mb-8">We supply highly quality organic products</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#F85559] border-none text-white">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle w-4 md:w-12 bg-[#121212] text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle w-4 md:w-12 bg-[#121212] text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle w-4 md:w-12 bg-[#121212] text-white border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle w-4 md:w-12 bg-[#121212] text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle w-4 md:w-12 bg-[#121212] text-white border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle w-4 md:w-12 bg-[#121212] text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle w-4 md:w-12 bg-[#121212] text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle w-4 md:w-12 bg-[#121212] text-white border-none">❯</a>
                     </div>
                 </div>
             </div>
-            <div class="navbar-center hidden lg:flex gap-4">
-                <div><img src="images/logo.png" alt=""></div>
-                <div>
-                    <h1 class="text-4xl font-bold text-white">Fruit Burst</h1>
-                </div>
-            </div>
-            <div class="navbar-end">
-                <input type="text" placeholder="Search here"
-                    class="input input-bordered w-full max-w-xs rounded-full hidden lg:flex" />
-                <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-max">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                        <input type="text" placeholder="Search here"
-                            class="input input-bordered w-full max-w-xs rounded-full" />
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- navbar section end -->
-        
+        </section>
+        <!-- carousel section end -->
     </header>
+    <main>
+
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
